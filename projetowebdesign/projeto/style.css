@@ -1,0 +1,37 @@
+/* Personalização leve (CSS3) sobre o Bootstrap */
+@import url("https://fonts.googleapis.com/css2?family=Anton&family=Barlow+Condensed:wght@400;600;700&display=swap");
+
+:root {
+  --phantom-red: #e50914;
+}
+
+body {
+  font-family: "Barlow Condensed", sans-serif;
+  font-size: 18px;
+}
+
+.navbar-brand,
+h1,
+h2 {
+  font-family: "Anton", sans-serif;
+  letter-spacing: 1px;
+}
+
+.nav-link:hover {
+  color: var(--phantom-red) !important;
+}
+
+.btn-danger {
+  background-color: var(--phantom-red);
+  border-color: var(--phantom-red);
+  border-radius: 0;
+}
+
+.card {
+  border-radius: 0;
+  transition: transform 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
